@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/notifi_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NFU2.0"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/list_shape">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="홍길동"
+                        android:textSize="30dp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txt_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="99"
+                        android:text="평간호사"
+                        android:textSize="15dp"
+                        android:gravity="bottom"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_userCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="15dp"
+                    android:text="99999999"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txt_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="15dp"
+                    android:text="무화과 A팀"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_QR"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/user_qr"
+
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_goTakeover"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:stateListAnimator="@null"
+                android:background="@color/white"
+                android:drawableTop="@drawable/takeover_resize"
+                android:paddingTop="15dp"
+                android:text="인수인계"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_goEMR"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:stateListAnimator="@null"
+                android:background="@color/white"
+                android:drawableTop="@drawable/emr_resize"
+                android:paddingTop="15dp"
+                android:text="EMR"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_goInjection"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:stateListAnimator="@null"
+                android:background="@color/white"
+                android:drawableTop="@drawable/injection_resize"
+                android:paddingTop="15dp"
+                android:text="투약관리"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_goScheduler"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:stateListAnimator="@null"
+                android:background="@color/white"
+                android:drawableTop="@drawable/schedule_resize"
+                android:paddingTop="15dp"
+                android:text="근무표"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/list_shape"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_goNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/notification_shape"
+                android:drawableRight="@drawable/next"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:stateListAnimator="@null"
+                android:text="    공지사항"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/mainListview"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

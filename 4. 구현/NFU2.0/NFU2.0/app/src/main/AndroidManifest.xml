@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nfu2">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NFU20">
+
+        <!--로그인 관련 activity-->
+        <activity
+            android:name="com.nfu2.Login.Access"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nfu2.Login.Login"
+            android:exported="false" />
+
+        <!--메인 관련 activity-->
+        <activity
+            android:name="com.nfu2.Main.Main"
+            android:exported="false" />
+
+        <activity
+            android:name="com.nfu2.Main.Notification"
+            android:exported="false" />
+
+        <activity
+            android:name="com.nfu2.Main.AddNotification"
+            android:exported="false" />
+
+        <!--인수인계 관련 activity-->
+
+        <!--EMR 관련 activity-->
+
+        <!--투약관리 관련 activity-->
+        <activity
+            android:name="com.nfu2.Injection.RECORD"
+            android:exported="false"/>
+        <activity
+            android:name="com.nfu2.Injection.INJECTIONDETAIL"
+            android:exported="false" />
+        <activity
+            android:name="com.nfu2.Injection.FIRSTPAGE"
+            android:exported="true"/>
+        <activity
+            android:name="com.nfu2.Injection.InjectionCheck"
+            android:exported="false" />
+        <activity
+            android:name="com.nfu2.Injection.ScanQR"
+            android:exported="false" />
+        <activity
+            android:name="com.nfu2.Injection.CreateQR"
+            android:exported="false" />
+        <activity
+            android:name="com.nfu2.Injection.INJECTIONMain"
+            android:exported="false" />
+
+        <!--스케줄러 관련 activity-->
+
+    </application>
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

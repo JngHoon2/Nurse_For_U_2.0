@@ -1,0 +1,34 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color colorButton
+color colorPrimary
+color defaultBlack
+color defaultGray
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable btn_shape
+drawable check_off
+drawable check_on
+drawable checkbox
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable logo
+id btn_login
+id chb_autoLogin
+id chb_bioLogin
+id imageView
+id lbl_copyright
+id pgb_findData
+id user_id
+id user_pwd
+layout ui_access
+layout ui_login
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.NFU20
